@@ -1,0 +1,11 @@
+:root {
+  --bg-color: #22262d;
+  --default-color: #8b9cbe;
+  --accent-color: #b2bfd9;
+  --accent-color2: #8b9cbe;
+  --border-radius: 5px;
+  --text-shadow-downwards: 1px 0px 0 var(--accent-color),
+    -1px 0px 0 var(--accent-color), 0px -1px 0 var(--accent-color),
+    0px 1px 0 var(--accent-color), 0px 2px 0 var(--accent-color),
+    0px 3px 0 var(--accent-color), 0px 4px 0 var(--accent-color);
+}
