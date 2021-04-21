@@ -3,7 +3,7 @@
   "version": "7.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev & NODE_ENV=development postcss tailwind.css -o ./dist/tailwind.css -w &",
     "build": "next build",
     "start": "next start"
   },
@@ -16,6 +16,7 @@
     "@svgr/webpack": "^5.5.0",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/forms": "^0.3.2",
+    "@tailwindcss/jit": "^0.1.18",
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.1",
     "axios": "^0.21.1",

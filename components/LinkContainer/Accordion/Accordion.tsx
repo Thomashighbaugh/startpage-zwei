@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 const StyledAccordionContainer = styled.div`
     margin-left: 30px;
     display:flex;
-    width:calc(40% - 120px - 80px);
+    width:calc(60% - 120px - 80px);
 `;
 
 export const AccordionContainer = (props: PropsWithChildren<{}>) => {
@@ -14,9 +14,9 @@ export const AccordionContainer = (props: PropsWithChildren<{}>) => {
 }
 
 const StyledAccordionGroup = styled.div`
-    height: 400px;
+    height: 300px;
     display: flex;
-    padding: 0 10px;
+    padding: 0 12px;
     flex-direction: row;
 
 `;
@@ -24,7 +24,7 @@ const StyledAccordionGroup = styled.div`
 const AccordionContent = styled.div< { width: number }>`
     height: 100%;
     width: ${({ width }) => width + "px"};
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
@@ -36,7 +36,7 @@ const AccordionTitleWrapper = styled.button< { active: boolean }>`
     background-color: var(--bg-color);
     border: 1px solid var(--accent-color2);
     height: 100%;
-    width: 90px;
+    width: 120px;
     border-radius:25px;
     cursor: ${({ active }) =>
         active ? "default" : "pointer"
@@ -57,7 +57,7 @@ const AccordionTitleWrapper = styled.button< { active: boolean }>`
         position: absolute;
         bottom: 0px;
         width: 100%;
-        height: ${({ active }) => active ? "400px" : "0"};
+        height: ${({ active }) => active ? "300px" : "0"};
         background-color: var(--accent-color2);
         transition:  ${({ active }) => active ? "1s" : ".5s"};
     }
@@ -66,7 +66,7 @@ const AccordionTitleWrapper = styled.button< { active: boolean }>`
         outline: none;
         ${({ active }) => !active && `
             ::before {
-                height: 80%;
+                height: 90%;
                 color: var(--bg-color)
             }
 
@@ -84,7 +84,7 @@ const AccordionTitle = styled.h1< { title: string, active: boolean }>`
     min-width: max-content;
     transition: .5s;
     letter-spacing: 10px;
-    font-size:2.62rem;
+    font-size:2.32rem;
     ::active{
         color: var(--bg-color)
 
