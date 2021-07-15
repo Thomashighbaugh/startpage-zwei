@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "pm2 start next -- dev -p 11843",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "startup": "pm2 start next -- start -p 11843"
+    "start": "next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
