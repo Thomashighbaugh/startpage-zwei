@@ -1,13 +1,10 @@
 import Head from "next/head";
-import Container from "../components/Global/Container";
-import News from "../components/News/News";
 import Google from "../components/Google/Google";
 import Bookmarks from "../components/Bookmarks/Bookmarks";
 import Clock from "../components/Clock/Clock";
-import Weather from "../components/Weather/Weather";
 import Calendar from "../components/Calendar/Calendar";
-import styles from "../styles/Home.module.css";
 import Crypto from "../components/Crypto/Crypto";
+import Container from "../components/Global/Container";
 {
   /* <div className={styles.container}></div> */
 }
@@ -33,25 +30,22 @@ wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         />
       </Head>
 
-      <div className=" xl:flex xl:justify-center overflow-scroll  xl:items-center min-h-screen  bg-hero-circuit-board">
-      <div
-      className=" grid
-    grid-cols-3 grid-flow-row gap-6 "
-    >          <Crypto />
-          <div className="col-span-2 xl:col-span-2 row-span-2">
+      <div className=" flex justify-center overflow-scroll  xl:items-center min-h-screen max-w-screen p-4 bg-hero-circuit-board px-3 mx-2 sm:px-2">
+        <Container>
+          <Crypto />
+          <div className="col-span-3 xl:col-span-2 row-span-2">
             <Google />
             <Bookmarks />
             <div className="grid grid-cols-3 gap-6">
               <div className="col-span-2 md:col-span-2 row-span 2">
                 <Clock />
-                <Weather />
               </div>
               <div className="col-span-3 lg:col-span-1">
                 <Calendar />
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </div>
     </div>
   );

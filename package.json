@@ -1,6 +1,6 @@
 {
-  "name": "morning-briefing",
-  "version": "0.1.0",
+  "name": "zwei",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
