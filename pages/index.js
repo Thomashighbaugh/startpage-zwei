@@ -30,17 +30,17 @@ wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         />
       </Head>
 
-      <div className=" flex justify-center overflow-scroll  xl:items-center min-h-screen max-w-screen p-4 bg-hero-circuit-board px-3 mx-2 sm:px-2">
+      <div className=" flex justify-center grid-col-6 col-span-6 overflow-scroll  xl:items-center min-h-screen max-w-screen p-4 bg-hero-circuit-board px-3 mx-2 sm:px-2">
         <Container>
           <Crypto />
           <div className="col-span-3 xl:col-span-2 row-span-2">
             <Google />
             <Bookmarks />
             <div className="grid grid-cols-3 gap-6">
-              <div className="col-span-2 md:col-span-2 row-span 2">
+              <div className=" md:col-span-3 xl:col-span-2 col-span-3 ">
                 <Clock />
               </div>
-              <div className="col-span-3 lg:col-span-1">
+              <div className="col-span-3 xl:col-span-1">
                 <Calendar />
               </div>
             </div>

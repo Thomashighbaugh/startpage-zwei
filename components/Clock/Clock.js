@@ -41,36 +41,15 @@ class Clock extends Component {
 
   render() {
     return (
-      <div className="bg-gray-900 bg-opacity-50 hover:bg-opacity-75 rounded-xl px-4 py-12 mb-6 text-gray-50 text-center">
+      <div className="bg-gray-900 bg-opacity-50 hover:bg-opacity-75 rounded-xl px-4 w-100 py-8 mb-6 text-gray-50 text-center">
         <div className=" justify-center items-center ">
-          <h1 className="text-5xl ">{this.state.time}</h1>
+          <h1 className="text-6xl ">{this.state.time}</h1>
           <hr className="w-1/2 mx-36 border-b-2 border-gray-50" />
-          <h2 className="text-2xl mt-3">{this.state.date}</h2>
+          <h2 className="text-3xl mt-3">{this.state.date}</h2>
         </div>
       </div>
     );
   }
-  // return <div className="bg-gray-900 bg-opacity-75 rounded-xl px-4 py-16 mb-6">
-
-  //   <div className=" justify-center items-center">
-
-  //     <div className="mr-6">
-  //       <div className={` w-24 h-24 rounded-full
-  //         flex justify-center items-center`}>
-
-  //           <div className="text-4xl text-white font-light">{time}</div>
-  //           <span className="text-gray-100 font-bold">{amPm}</span>
-
-  //       </div>
-  //     </div>
-
-  //     <div>
-  //       <div className="text-gray-100 text-lg">{process.env.CITY}</div>
-  //     </div>
-
-  //   </div>
-
-  // </div>
 }
 
 export default Clock;
