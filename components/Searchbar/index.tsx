@@ -7,7 +7,7 @@ function Searchbar() {
   const [term, setTerm] = useState('')
 
   function search() {
-    const url = 'https://www.Searchbar.com/search?q='
+    const url = 'https://www.google.com/search?q='
     window.location.href = url + term
   }
 
