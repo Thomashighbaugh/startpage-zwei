@@ -1,41 +1,45 @@
-# Morning Briefing
+<div id="top"></div>
 
-A browser homepage dashboard, with customizable config options
+<br />
 
-### [Demo](https://oddscenes.com/lab/morning-briefing)
+<div align="center">
+  
+  <img src="https://i.redd.it/siiau65zims71.png" />
+  
+  <h1 align="center">homie</h1>
 
-&nbsp;&nbsp;
+  <p align="center">
+    A minimalistic personal dashboard. 
+  </p>
+</div>
 
-<img src="https://oddscenes.s3.amazonaws.com/screenshot-morning-briefing.png" width="500" />
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#disclaimer">Disclaimer</a>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
-&nbsp;&nbsp;
+### Disclaimer
+This codebase is super messy since it's intended to be a personal 5 minutes project until, by community demand, I've open-sourced it. I'm not sure I'll find the time (and will) to refactor this project, so open issues if you want, but bear with me as I cannot guarantee acceptable response times.
 
-## Running on Startup
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-Because the [News API][1] only allows API requests from localhost, we can run the app on startup locally. Then bookmark localhost with a unique port (set in `/data/server.js`). Default port here is 11843.
+### Usage
+Provide the following environment variables (put them inside a `.env.local` file in the project's root folder when running locally):
+```env
+LOCATION_LATITUDE=12.3456
+LOCATION_LONGITUDE=12.3456
+OPENWEATHERMAP_API_KEY=foo12bar34
+```
 
-_Based on operating system_: [https://pm2.keymetrics.io/docs/usage/startup][2]
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-1. `pm2 startup`
-2. Copy & paste provided path in terminal
-3. Startup the app via `npm run startup` (uses pm2, ensure no other processes are running)
-4. Save to the pm2 startup list `pm2 save`
+### License
 
-To disable, or reset pm2 startup scripts, use `pm2 unstartup`
-
-### Usage:
-- Dev: `npm run dev`
-- Build: `npm run build`
-- Production: `npm start`
-
-
-### Depencencies:
-- NextJS / ReactJS
-- TailwindCSS
-- News API
-- Open Weather API
-- Unsplash Source API
-
-
-[1]: https://newsapi.org
-[2]: https://pm2.keymetrics.io/docs/usage/startup
+Distributed under the aGPL v3 License.
+<p align="right">(<a href="#top">back to top</a>)</p>
