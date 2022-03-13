@@ -6,14 +6,18 @@ import Weather from "../components/Weather";
 import Quotes from "../components/Quotes";
 import Searchbar from "../components/Searchbar";
 import Clock from "../components/Clock";
+import Menu from "../components/Menu";
+import Backdrop from "../components/Backdrop";
 const Startpage = ({ weatherInfo }) => {
 
   return (
+    <body className="min-w-full min-h-full p-0 m-0 ">
+      <Backdrop/>
     <div
-      className="flex flex-col h-full w-full p-36"
+      className="flex flex-col h-full w-full p-36 z-50"
     >
 
-
+<Menu/>
         <div className="bg-gray-900 border-2 border-solid border-blue-500 bg-opacity-90 mb-4 rounded-xl p-8 text-3xl text-gray-50 text-center">
         Startpage Zwei
         </div>
@@ -47,6 +51,7 @@ const Startpage = ({ weatherInfo }) => {
       </div>
 <Quotes/>
     </div>
+    </body>
   );
 };
 

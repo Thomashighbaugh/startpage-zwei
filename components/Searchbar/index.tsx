@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import useKeyPress from "../../hooks/useKeyPress.hook";
-
+import Search from './Search';
 
 function Searchbar() {
 
@@ -27,9 +27,9 @@ function Searchbar() {
       onSubmit={search}
       />
 
-    <button className=" my-6 mx-3 p-1 border-2 border-solid border-pink-300 text-center align-middle rounded-lg
+    <button className=" my-6 mx-3 px-3 p-1 border-2 border-solid border-pink-300 text-center align-middle rounded-lg
       text-pink-300 font-medium"
-      onClick={search}>Search</button>
+      onClick={search}><Search/></button>
   </div>
 }
 
