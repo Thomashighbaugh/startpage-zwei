@@ -1,5 +1,5 @@
 {
-  "name": "morning-briefing",
+  "name": "homie",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,25 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/free-brands-svg-icons": "^5.15.3",
-    "@fortawesome/free-regular-svg-icons": "^5.15.3",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "@icons-pack/react-simple-icons": "^4.4.0",
-    "@react-icons/all-files": "^4.1.0",
-    "@tailwindcss/aspect-ratio": "^0.2.1",
-    "@tailwindcss/forms": "^0.3.3",
-    "@tailwindcss/jit": "^0.1.18",
+    "@tailwindcss/aspect-ratio": "^0.3.0",
+    "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/typography": "^0.4.1",
-    "antd": "^4.16.6",
-    "autoprefixer": "^9.8.6",
-    "axios": "^0.21.1",
-    "chart.js": "^3.4.1",
-    "chartjs": "^0.3.24",
-    "date-fns": "^2.22.1",
-    "jquery": "^3.6.0",
+    "autoprefixer": "^10.3.6",
+    "clsx": "^1.1.1",
+    "date-fns": "^2.24.0",
+    "date-fns-tz": "^1.1.6",
     "moment": "^2.29.1",
+
     "moment-timezone": "^0.5.33",
     "next": "9.5.5",
     "pm2": "^4.4.1",
@@ -47,5 +37,6 @@
     "tailwind-heropatterns": "^0.0.8",
     "tailwindcss": "^1.7.3",
     "whatwg-fetch": "^3.6.2"
+
   }
 }
