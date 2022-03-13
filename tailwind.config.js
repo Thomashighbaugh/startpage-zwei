@@ -2,34 +2,6 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
   },
-  plugins: [
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/typography"),
-    require("tailwind-heropatterns")({
-      // as per tailwind docs you can pass variants
-      variants: [],
-
-      // the list of patterns you want to generate a class for
-      // the names must be in kebab-case
-      // an empty array will generate all 87 patterns
-      patterns: [],
-
-      // The foreground colors of the pattern
-      colors: {
-        default: "#3c3f4c",
-        dark: "#98A1B1",
-        blue: "#0badff",
-        darker: "#555e70",
-      },
-
-      // The foreground opacity
-      opacity: {
-        default: "1.0",
-        100: "1.0",
-      },
-    }),
-  ],
   variants: {
     textColor: ["responsive", "hover", "focus", "group-hover"],
     backgroundColor: ["responsive", "hover", "focus", "active", "group-hover"],
@@ -80,6 +52,11 @@ module.exports = {
         44: "11rem",
         48: "12rem",
         64: "16rem",
+        72: "20rem",
+        84: "24rem",
+        90: "27rem",
+        96: "30rem",
+        108: "34rem",
         "1/2": "50%",
         "1/3": "33.333333%",
         "2/3": "66.666667%",
@@ -227,15 +204,19 @@ module.exports = {
         13: "3.25rem",
         14: "3.5rem",
       },
-
       colors: {
-        "purple-100": "#353454",
-        "purple-200": "#30324A",
-        "purple-300": "#2B2C49",
-        "purple-400": "#252742",
-        "purple-500": "#1C1D31",
-        "purple-600": "#11111D",
-
+        
+purple: {
+    100: "#e6e0ff",
+    200: "#cdc1ff",
+    300: "#b4a3ff",
+    400: "#9b84ff",
+    500: "#8265ff",
+    600: "#6851cc",
+    700: "#4e3d99",
+    800: "#342866",
+    900: "#1a1433"
+        },
         green: {
           DEFAULT: "#00FFCC",
           50: "#E5FFFA",
@@ -251,7 +232,17 @@ module.exports = {
         },
         teal: "#19D0C2",
         blue: "#4244FF",
-        pink: "#F55498",
+        pink: {
+          100: "#ffccee",
+          200: "#ff99dd",
+          300: "#ff66cc",
+          400: "#ff33bb",
+          500: "#ff00aa",
+          600: "#cc0088",
+          700: "#990066",
+          800: "#660044",
+          900: "#330022"
+},
         "white ": "#FFFFFF",
         blue: {
           DEFAULT: "#00CAFF",
@@ -277,7 +268,7 @@ module.exports = {
           600: "#4A5262",
           700: "#3F4653",
           800: "#343945",
-          900: "#292D36",
+          900: "#17191e",
         },
         links: "#737e95",
 
@@ -298,28 +289,6 @@ module.exports = {
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/typography"),
-    require("tailwind-heropatterns")({
-      // as per tailwind docs you can pass variants
-      variants: [],
 
-      // the list of patterns you want to generate a class for
-      // the names must be in kebab-case
-      // an empty array will generate all 87 patterns
-      patterns: [],
-
-      // The foreground colors of the pattern
-      colors: {
-        default: "#22262d",
-        dark: "#98A1B1",
-        blue: "#0badff",
-        darker: "#555e70",
-      },
-
-      // The foreground opacity
-      opacity: {
-        default: "1.0",
-        100: "1.0",
-      },
-    }),
   ],
 };
