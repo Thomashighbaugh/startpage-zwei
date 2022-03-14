@@ -77,7 +77,7 @@ const Weather = ({ weatherInfo }) => {
       {Animations[weatherInfo.current.weather[0].main]
         ? Animations[weatherInfo.current.weather[0].main]
         : null}
-        <div className="flex flex-row mt-12 justify-around mx-12 align-middle">
+        <div className="flex flex-row my-12 justify-around mx-12 align-middle">
       <img
         src={`http://openweathermap.org/img/wn/${weatherInfo.current.weather[0].icon}@2x.png`}
         className="w-12 h-12 text-white bg-blue-500 rounded-xl bg-opacity-85 mx-auto mt-auto"
@@ -87,7 +87,7 @@ const Weather = ({ weatherInfo }) => {
       </p>
       </div>
       <p
-        className="text-sm mt-1 mx-auto mb-auto text-center"
+        className="text-lg mt-1 mx-auto mb-auto text-center"
         style={{ color: "#8b9cbe" }}
       >
         Feels like {weatherInfo.current.feels_like}<sup>°F</sup>

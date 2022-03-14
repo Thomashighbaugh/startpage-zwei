@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { format } from "date-fns";
 import NewsList from "../components/NewsFeed";
 import ShortCuts from "../components/Bookmarks";
 import Weather from "../components/Weather";
@@ -7,50 +5,37 @@ import Quotes from "../components/Quotes";
 import Searchbar from "../components/Searchbar";
 import Clock from "../components/Clock";
 import Menu from "../components/Menu";
-import Backdrop from "../components/Backdrop";
+
 const Startpage = ({ weatherInfo }) => {
-
   return (
-    <body className="min-w-full min-h-full p-0 m-0 ">
-      <Backdrop/>
-    <div
-      className="flex flex-col h-full w-full p-36 z-50"
-    >
-
-<Menu/>
-        <div className="bg-gray-900 border-2 border-solid border-blue-500 bg-opacity-90 mb-4 rounded-xl p-8 text-3xl text-gray-50 text-center">
-        Startpage Zwei
+    <body className="min-w-full min-h-full p-0 m-0 place-content-stretch">
+      <div className="flex flex-col h-full w-full pl-24 pr-24 pt-12 pb-3 z-50">
+        <div className="bg-gray-900 border-4 border-solid border-gray-500 bg-opacity-90 mb-4 rounded-xl p-12 lg:text-5xl text-3xl text-gray-50 text-center">
+          Startpage Zwei
         </div>
-      <div className="lg:space-x-8 flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 w-full lg:flex lg:flex-col lg:space-y-4">
-          <div className="lg:space-x-4 lg:flex lg:flex-row">
-            <div
-              className="lg:w-1/2  my-2 bg-gray-900 border-2 border-solid border-blue-500 bg-opacity-90 rounded-xl flex flex-col"
-            
-            >
-            <Clock/>
+        <div className="lg:space-x-8 flex flex-col lg:flex-row">
+          <div className="lg:w-1/2 w-full lg:flex lg:flex-col lg:space-y-4">
+            <div className="lg:space-x-4 lg:flex lg:flex-row">
+              <div className="lg:w-1/2  my-2 bg-gray-900 border-4 border-solid border-gray-500 bg-opacity-90 rounded-xl flex flex-col">
+                <Clock />
+              </div>
+              <div className="lg:w-1/2 my-2 bg-gray-900 border-4 border-solid border-gray-500 bg-opacity-90 rounded-xl flex flex-col justify-center content-center items-center">
+                <Weather weatherInfo={weatherInfo} />
+              </div>
             </div>
-            <div
-              className="lg:w-1/2 my-2 h-48 bg-gray-900 border-2 border-solid border-blue-500 bg-opacity-90 rounded-xl flex flex-col"
-
-            >
-              <Weather weatherInfo={weatherInfo} />
+            <div className="w-full h-54 bg-gray-900 bg-opacity-90 rounded-xl">
+              <Searchbar />
             </div>
           </div>
-          <div
-            className="w-full h-48 bg-gray-900 bg-opacity-90 rounded-xl"
-            
-          ><Searchbar/></div>
+          <div className="lg:w-1/3 w-full ">
+            <NewsList />
+          </div>
+          <div className="lg:w-1/6 w-full">
+            <ShortCuts />
+          </div>
         </div>
-        <div className="lg:w-1/3 w-full ">
-          <NewsList />
-        </div>
-        <div className="lg:w-1/6 w-full">
-          <ShortCuts />
-        </div>
+        <Quotes />
       </div>
-<Quotes/>
-    </div>
     </body>
   );
 };
@@ -68,7 +53,7 @@ export async function getServerSideProps(context: any) {
 
   return {
     props: {
-      weatherInfo,
-    },
+      weatherInfo
+    }
   };
 }

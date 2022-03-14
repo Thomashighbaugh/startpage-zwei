@@ -70,7 +70,7 @@ const NewsList = () => {
               id={"news-" + index}
               className={clsx(
                 "h-36 bg-gray-900 border-2 border-solid bg-opacity-90 rounded-xl my-2 flex flex-col p-8",
-                current === index ? "border-pink-300" : "border-blue-500"
+                current === index ? "border-white" : "border-gray-500"
               )}
               onMouseEnter={() => setCurrent(index)}
             >

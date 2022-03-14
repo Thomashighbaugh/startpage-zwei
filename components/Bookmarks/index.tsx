@@ -1,13 +1,22 @@
 import Github from './Github';
 import Reddit from './Reddit';
 import Mailbox from './Mailbox';
+import Spotify from './Spotify';
+import Dribbble from './Dribbble';
+import Instagram from './Instagram';
 
-const ShortCuts = () => (
-  <div className="bg-gray-900 w-full  border-2 border-solid border-blue-500 bg-opacity-90 rounded-xl min-h-full justify-center content-center items-center pl-12 align-middle p-2">
+const ShortCuts = () => (<div className="flex flex-row w-full justify-between content-between items-between place-content-between  border-solid py-16 border-gray-500 bg-opacity-90 border-4 bg-gray-900  rounded-xl  ">
+  <div className=" flex flex-col flex- min-h-full justify-between content-between items-between place-content-stretch align-middle p-4">
     <Github/>
     <Reddit/>
     <Mailbox/>
 
+  </div>
+  <div className=" flex flex-col min-h-full justify-center content-center items-center  place-content-stretch align-middle p-4">
+    <Spotify />
+    <Dribbble/>
+    <Instagram />
+    </div>
   </div>
 );
 

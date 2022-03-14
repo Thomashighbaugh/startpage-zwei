@@ -6,7 +6,7 @@ const Search = (props) => {
 return (
 
 
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" className="bi bi-reddit fill-current text-pink-300 "
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" className="bi bi-reddit fill-current text-white hover:text-gray-500 "
     viewBox="0 0 512 512">
 
     <path

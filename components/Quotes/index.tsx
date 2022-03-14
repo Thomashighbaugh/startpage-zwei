@@ -7,7 +7,7 @@ const Quotes = () => {
   );
   return (
 
-        <div className=" bg-gray-900 border-2 border-solid border-blue-500 bg-opacity-90 mt-4 rounded-xl p-8">
+        <div className=" bg-gray-900 border-2 border-solid border-gray-500 bg-opacity-90 mt-4 rounded-xl p-12">
       <p className="mx-auto mb-0 leading-none font-medium text-2xl italic text-gray-50 ">
         {quote?.text}
       </p>
