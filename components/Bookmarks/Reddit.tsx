@@ -5,7 +5,7 @@ import React from "react";
 const Reddit = (props) => {
     return (
 <a href="https://reddit.com/u/ThomasLeonHighbaugh" >
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" className="bi bi-reddit text-white hover:text-gray-400  fill-current p-1 my-6  w-16 h-16" viewBox="0 0 16 16">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" className="bi bi-reddit text-white hover:text-gray-400  fill-current p-1 my-6  w-20 h-20" viewBox="0 0 16 16">
   <path
     d="M6.167 8a.831.831 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661zm1.843 3.647c.315 0 1.403-.038 1.976-.611a.232.232 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83.458 0 .83-.381.83-.83a.831.831 0 0 0-1.66 0z" />
   <path

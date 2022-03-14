@@ -12,7 +12,7 @@ const ShortCuts = () => (<div className="flex flex-row w-full justify-around con
     <Mailbox/>
 
   </div>
-  <div className=" flex flex-col min-h-full justify-center content-center items-center  place-content-stretch align-middle p-4">
+  <div className=" flex flex-col min-h-full justify-around content-around items-around  place-content-stretch align-middle p-4">
     <Spotify />
     <Dribbble/>
     <Instagram />
