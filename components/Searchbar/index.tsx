@@ -19,7 +19,7 @@ function Searchbar() {
     <div className=" bg-gray-900 border-4gita border-solid border-gray-500 bg-opacity-50 flex flex-row align-middle justify-center h-full w-full content-center justify-self-center justify-center p-16 relative  rounded-xl">
       <input
         type="text"
-        className="bg-gray-900 bg-opacity-50 hover:bg-opacity-75 align-middle placeholder-gray-200 w-full
+        className="bg-gray-900 bg-opacity-50 hover:bg-opacity-75 align-middle text-white placeholder-gray-200 w-full
         rounded-lg outline-none  max-h-12 my-6 border-2 border-solid border-white focus:border-gray-500"
         style={{ textIndent: "0.5rem" }}
         placeholder="Enter Search Query"
