@@ -16,7 +16,7 @@ function Searchbar() {
   }, [enterPress]);
 
   return (
-    <div className=" bg-gray-900 border-4gita border-solid border-gray-500 bg-opacity-50 flex flex-row align-middle justify-center h-full w-full content-center justify-self-center justify-center p-16 relative  rounded-xl">
+    <div className=" bg-gray-900 border-4 border-solid border-gray-500 bg-opacity-50 flex flex-row align-middle justify-center h-full w-full content-center justify-self-center justify-center p-16 relative  rounded-xl">
       <input
         type="text"
         className="bg-gray-900 bg-opacity-50 hover:bg-opacity-75 align-middle text-white placeholder-gray-200 w-full
