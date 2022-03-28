@@ -1,11 +1,11 @@
 module.exports = {
   future: {
-    removeDeprecatedGapUtilities: true
+    removeDeprecatedGapUtilities: true,
   },
   variants: {
     textColor: ["responsive", "hover", "focus", "group-hover"],
     backgroundColor: ["responsive", "hover", "focus", "active", "group-hover"],
-    opacity: ["responsive", "hover", "focus", "active", "group-hover"]
+    opacity: ["responsive", "hover", "focus", "active", "group-hover"],
   },
   theme: {
     screens: {
@@ -13,7 +13,7 @@ module.exports = {
       // 'md': '768px',
       md: "850px",
       lg: "1024px",
-      xl: "1280px"
+      xl: "1280px",
     },
     fontFamily: {
       // 'sans': ['Arial', 'sans-serif'],
@@ -23,13 +23,13 @@ module.exports = {
     fontWeight: {
       light: 300,
       normal: 400,
-      bold: 600
+      bold: 600,
     },
     extend: {
       backgroundImage: {
-        'logo': "url('/img/logo.svg')",
-        'bg': "url('/img/bg.png')",
-        '7': "url('/img/7.png')",
+        logo: "url('/img/logo.svg')",
+        bg: "url('/img/bg.png')",
+        7: "url('/img/7.png')",
       },
       height: {
         auto: "auto",
@@ -80,7 +80,7 @@ module.exports = {
         "83p": "83.333333%",
         "91p": "91.666667%",
         full: "100%",
-        screen: "100vh"
+        screen: "100vh",
       },
       width: {
         auto: "auto",
@@ -127,7 +127,7 @@ module.exports = {
         "91p": "91.666667%",
         full: "100%",
         full: "100%",
-        screen: "100vh"
+        screen: "100vh",
       },
       rotate: {
         "-180": "-180deg",
@@ -162,7 +162,7 @@ module.exports = {
         30: "30deg",
         45: "45deg",
         90: "90deg",
-        180: "180deg"
+        180: "180deg",
       },
       spacing: {
         px: "1px",
@@ -209,13 +209,13 @@ module.exports = {
         126: "32rem",
         132: "34rem",
         140: "36rem",
-        half: "65%"
+        half: "65%",
       },
       lineHeight: {
         11: "2.75rem",
         12: "3rem",
         13: "3.25rem",
-        14: "3.5rem"
+        14: "3.5rem",
       },
       colors: {
         purple: {
@@ -227,7 +227,7 @@ module.exports = {
           600: "#6851cc",
           700: "#4e3d99",
           800: "#342866",
-          900: "#1a1433"
+          900: "#1a1433",
         },
         green: {
           DEFAULT: "#00FFCC",
@@ -240,7 +240,7 @@ module.exports = {
           600: "#00CCA3",
           700: "#00997A",
           800: "#006652",
-          900: "#003329"
+          900: "#003329",
         },
         yellow: {
           100: "#ffffef",
@@ -251,7 +251,7 @@ module.exports = {
           600: "#cccc8c",
           700: "#999969",
           800: "#666646",
-          900: "#333323"
+          900: "#333323",
         },
         teal: {
           100: "#d5eff6",
@@ -262,7 +262,7 @@ module.exports = {
           600: "#268eaa",
           700: "#1c6a7f",
           800: "#134755",
-          900: "#09232a"
+          900: "#09232a",
         },
         pink: {
           100: "#ffccee",
@@ -273,10 +273,10 @@ module.exports = {
           600: "#cc0088",
           700: "#990066",
           800: "#660044",
-          900: "#330022"
+          900: "#330022",
         },
-        "white": "#F4F4F7",
-        "black": "#282b36",
+        white: "#F4F4F7",
+        black: "#282b36",
         blue: {
           DEFAULT: "#00CAFF",
           50: "#8AE7FF",
@@ -288,7 +288,7 @@ module.exports = {
           600: "#00BEF0",
           700: "#00B2E0",
           800: "#00A6D1",
-          900: "#009AC2"
+          900: "#009AC2",
         },
         gray: {
           DEFAULT: "#555E70",
@@ -301,7 +301,7 @@ module.exports = {
           600: "#4A5262",
           700: "#3F4653",
           800: "#343945",
-          900: "#17191e"
+          900: "#17191e",
         },
         links: "#737e95",
 
@@ -310,8 +310,8 @@ module.exports = {
           yellow: "#ffff73",
           purple: "#af9dfc",
           red: "#ff3d81",
-          blue: "#0badff"
-        }
+          blue: "#0badff",
+        },
       },
       opacity: {
         5: "0.05",
@@ -331,13 +331,13 @@ module.exports = {
         80: "0.80",
         85: "0.85",
         90: "0.90",
-        95: "0.95"
-      }
-    }
+        95: "0.95",
+      },
+    },
   },
   plugins: [
     require("@tailwindcss/forms"),
     require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/typography")
-  ]
+    require("@tailwindcss/typography"),
+  ],
 };

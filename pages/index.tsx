@@ -10,8 +10,8 @@ const Startpage = ({ weatherInfo }) => {
   return (
     <body className="min-w-full min-h-full p-0 m-0 place-content-stretch">
       <div className="flex flex-col h-full w-full pl-24 pr-24 pt-12 pb-3 z-50">
-        <div className="bg-gray-900 border-4 border-solid border-gray-500 bg-opacity-90 mb-4 rounded-xl p-12 lg:text-5xl text-3xl text-gray-50 text-center">
-          Startpage Zwei
+        <div className="bg-gray-900 border-4 border-solid border-gray-500 bg-opacity-90 lg:mb-4  rounded-xl p-12 lg:text-5xl text-3xl text-gray-50 text-center">
+          Welcome to the Internet
         </div>
         <div className="lg:space-x-8 flex flex-col lg:flex-row">
           <div className="lg:w-1/2 w-full lg:flex lg:flex-col lg:space-y-4">

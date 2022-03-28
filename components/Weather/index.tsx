@@ -53,7 +53,7 @@ const Fog = (
       options={{
         loop: true,
         autoplay: true,
-        animationData:cloudsAnimationData,
+        animationData: cloudsAnimationData,
         rendererSettings: { preserveAspectRatio: "xMinYMin meet" },
       }}
       height={300}
@@ -77,20 +77,22 @@ const Weather = ({ weatherInfo }) => {
       {Animations[weatherInfo.current.weather[0].main]
         ? Animations[weatherInfo.current.weather[0].main]
         : null}
-        <div className="flex flex-row my-12 justify-around mx-12 align-middle">
-      <img
-        src={`http://openweathermap.org/img/wn/${weatherInfo.current.weather[0].icon}@2x.png`}
-        className="w-12 h-12 text-white bg-blue-500 rounded-xl bg-opacity-85 mx-auto mt-auto"
-      />
-      <p className="text-4xl mt-2 mx-auto text-center  text-gray-50">
-        {weatherInfo.current.temp}<sup>°F</sup>
-      </p>
+      <div className="flex flex-row my-12 justify-around mx-12 align-middle">
+        <img
+          src={`http://openweathermap.org/img/wn/${weatherInfo.current.weather[0].icon}@2x.png`}
+          className="w-12 h-12 text-white bg-blue-500 rounded-xl bg-opacity-85 mx-auto mt-auto"
+        />
+        <p className="text-4xl mt-2 mx-auto text-center  text-gray-50">
+          {weatherInfo.current.temp}
+          <sup>°F</sup>
+        </p>
       </div>
       <p
         className="text-lg mt-1 mx-auto mb-auto text-center"
         style={{ color: "#8b9cbe" }}
       >
-        Feels like {weatherInfo.current.feels_like}<sup>°F</sup>
+        Feels like {weatherInfo.current.feels_like}
+        <sup>°F</sup>
       </p>
     </div>
   );
