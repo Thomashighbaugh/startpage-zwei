@@ -15,6 +15,22 @@ export default Object.seal([
   "'What you are is what you have been. What you will be is what you do now.' \n - the Buddha",
   "'If you remember nothing else that I say or do, remember this alone: the Gods LOVE lighter fluid!' \n - Swami Kalidasa Shivaratri",
   "Man is the only animal that must be encouraged to live \n - Frederick Nietszche ",
+"The only true wisdom is in knowing you know nothing. \n - Socrates",
+  "Though art drawn and speak of peace? I hate the word, as I hate Hell, all Montagues and thee! \n - Tybalt Prince of Cats (Romeo and Juliet )"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]).map((quote) => ({
   text: quote.split("\n")[0].trim(),
   author: quote.split("\n")[1].trim(),
